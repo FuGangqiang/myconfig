@@ -1,0 +1,32 @@
+(require 'csharp-mode)
+(require 'omnisharp)
+(require 'dotnet)
+
+(defun local-project-omnisharp-start ()
+  (interactive)
+  (let ((current-dir (file-name-directory buffer-file-name)))
+    (while (and (not (equal "/" current-dir))
+		(not (directory-files current-dir nil ".*proj$")))
+      (setq current-dir (file-name-directory (directory-file-name current-dir))))
+    (if (not (equal "/" current-dir))
+	(omnisharp--do-server-start current-dir))))
+
+(add-to-list 'auto-mode-alist '("\\.csproj\\'" . xml-mode))
+
+(add-hook 'csharp-mode-hook
+	  (lambda ()
+	    (setq omnisharp-server-executable-path "/opt/omnisharp/run")
+	    (add-to-list (make-local-variable 'company-backends) 'company-omnisharp)
+	    (dotnet-mode)
+	    (omnisharp-mode)
+	    (local-set-key (kbd "C-c f") 'omnisharp-code-format-entire-file)
+	    (local-set-key (kbd "C-<mouse-1>") 'omnisharp-go-to-definition)
+	    (local-set-key (kbd "M-.") 'omnisharp-go-to-definition)
+	    (local-set-key (kbd "C-.") 'omnisharp-go-to-definition-other-window)
+	    (local-set-key (kbd "C-c i") 'omnisharp-find-usages)
+	    (local-set-key (kbd "C-c s") 'local-project-omnisharp-start)
+	    (local-set-key (kbd "C-c r") 'omnisharp-rename)
+	    (global-unset-key (kbd "C-<mouse-1>"))
+	    ))
+
+(provide 'init-csharp-mode)

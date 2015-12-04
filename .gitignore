@@ -1,0 +1,16 @@
+*~
+*.eld
+*.retry
+.vagrant/
+HOME/emacs.d/elpa/
+HOME/emacs.d/eshell/
+HOME/emacs.d/recentf
+HOME/emacs.d/custom.el
+HOME/emacs.d/tramp
+HOME/config/ranger/bookmarks
+HOME/config/ranger/tagged
+HOME/config/ranger/history
+HOME/config/systemd/user/*.wants/
+HOME/config/mpv/scripts/mpris.so
+HOME/config/nvim/autoload
+HOME/config/nvim/tmp

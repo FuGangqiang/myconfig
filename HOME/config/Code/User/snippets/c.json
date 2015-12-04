@@ -1,0 +1,12 @@
+{
+	"ifndef": {
+		"prefix": "#ifndef",
+		"body": [
+			"#ifndef ${1:_H}",
+			"#define $1",
+			"$0",
+			"#endif /* $1 */",
+			""
+		]
+	}
+}

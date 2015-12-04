@@ -1,0 +1,32 @@
+add_newline = false
+
+[character]
+success_symbol = "[➜](bold green)"
+
+[package]
+disabled = true
+
+format = """
+$directory\
+$git_branch\
+$git_commit\
+$git_state\
+$git_status\
+$python\
+$ruby\
+"""
+
+[directory]
+truncation_length = 3
+truncate_to_repo = false
+
+[python]
+format = '[$symbol(-$virtualenv)]($style) '
+symbol = 'py'
+
+[ruby]
+format = '[$symbol(-$version)]($style) '
+symbol = 'rb'
+
+[nodejs]
+disabled = true

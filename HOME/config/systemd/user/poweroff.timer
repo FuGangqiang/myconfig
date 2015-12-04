@@ -1,0 +1,8 @@
+[Unit]
+Description=Poweroff system
+
+[Timer]
+OnCalendar=*-*-* 22:00:00 CST
+
+[Install]
+WantedBy=timers.target

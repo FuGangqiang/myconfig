@@ -1,0 +1,44 @@
+[options]
+overlay = true
+scaling_mode = none
+background = #FAEBD7
+overlay_font = Monospace:14
+title_text = imv
+suppress_default_binds = true
+
+
+[aliases]
+
+
+[binds]
+q = quit
+x = close
+f = fullscreen
+a = zoom actual
+r = reset
+c = center
+
+s = scaling next
+<Shift+S> = upscaling next
+
+<minus> = zoom -1
+<equal> = zoom 1
+
+p = prev
+n = next
+
+j = pan 0 -50
+k = pan 0 50
+h = pan 50 0
+l = pan -50 0
+
+t = goto 1
+b = goto 0
+
+<Tab> = slideshow +1
+<Shift+Tab> = slideshow -1
+
+<period> = next_frame
+<space> = toggle_playing
+
+# y = exec echo working!

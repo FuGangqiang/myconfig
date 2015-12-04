@@ -1,0 +1,21 @@
+#!/bin/sh
+
+#fcitx
+export GTK_IM_MODULE=fcitx
+export QT_IM_MODULE=fcitx
+export XMODIFIERS="@im=fcitx"
+export LC_CTYPE="zh_CN.utf8"
+
+#fontconfig
+export XDG_CONFIG_HOME=~/.config
+
+# Uniform look for Qt and GTK applications
+QT_STYLE_OVERRIDE=GTK+
+export TERMINAL=alacritty
+
+systemctl --user import-environment
+
+fcitx &
+multiscreen.sh &
+
+exec i3

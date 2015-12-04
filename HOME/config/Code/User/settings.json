@@ -1,0 +1,114 @@
+{
+  "telemetry.enableTelemetry": false,
+  "telemetry.enableCrashReporter": false,
+  "update.mode": "none",
+  "workbench.colorTheme": "Solarized Light",
+  "workbench.settings.editor": "json",
+  "workbench.iconTheme": "vs-minimal",
+  "workbench.activityBar.visible": false,
+  "workbench.editor.openPositioning": "left",
+  "workbench.startupEditor": "none",
+  "workbench.colorCustomizations": {
+    "tab.activeBorder": "#ff0000",
+    "tab.unfocusedActiveBorder": "#000000"
+  },
+  "workbench.editor.scrollToSwitchTabs": true,
+  "window.titleBarStyle": "native",
+  "window.menuBarVisibility": "toggle",
+  "window.zoomLevel": 0,
+  "editor.fontSize": 14,
+  "editor.tabSize": 4,
+  "editor.insertSpaces": true,
+  "editor.codeLens": false,
+  "editor.minimap.enabled": false,
+  "editor.renderWhitespace": "none",
+  "editor.renderControlCharacters": false,
+  "editor.fontFamily": "'DejaVu Sans Mono', 'monospace', monospace",
+  "editor.suggest.localityBonus": true,
+  //"editor.lineNumbers": "relative",
+  "breadcrumbs.enabled": true,
+  "explorer.confirmDelete": false,
+  "explorer.confirmDragAndDrop": false,
+  "extensions.ignoreRecommendations": true,
+  "files.trimTrailingWhitespace": true,
+  "files.insertFinalNewline": true,
+  "files.autoSave": "afterDelay",
+  "files.eol": "\n",
+  "files.associations": {
+    "Vagrantfile": "ruby",
+    "*.c": "c",
+    "*.h": "c",
+    "*.wxss": "css",
+    "*.wxml": "html",
+    "*.wxs": "javascript",
+    "*.cjson": "jsonc",
+    "*.html.erb": "html",
+    "*.css.erb": "css"
+  },
+  "files.exclude": {
+    "**/.git": true,
+    "**/.venv": true,
+    "**/.idea": true,
+    "**/node_modules": true,
+    "**/__pycache__": true
+  },
+  "files.watcherExclude": {
+    "**/.git/objects/**": true,
+    "**/.git/subtree-cache/**": true,
+    "**/node_modules/**": true,
+    "**/.venv": true,
+    "**/.idea": true
+  },
+  "search.exclude": {
+    "**/.git": true,
+    "**/.venv": true,
+    "**/.idea": true,
+    "**/node_modules": true,
+    "**/.vscode": true
+  },
+  "terminal.integrated.fontSize": 14,
+  "vim.useSystemClipboard": true,
+  "vim.useCtrlKeys": false,
+  "python.terminal.activateEnvironment": false,
+  "python.autoComplete.extraPaths": ["${workspaceFolder}"],
+  "python.formatting.provider": "yapf",
+  "python.formatting.yapfArgs": ["--style", "${env:HOME}/.config/yapf/style"],
+  "vetur.validation.template": false,
+  "go.useLanguageServer": true,
+  "go.lintFlags": ["-exclude=vendor/...", "-config=${workspaceFolder}/.revive.toml"],
+  "C_Cpp.updateChannel": "Insiders",
+  "emmet.includeLanguages": {
+    "wxml": "html"
+  },
+  "minapp-vscode.disableAutoConfig": true,
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.tabSize": 2
+  },
+  "[html]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.tabSize": 2
+  },
+  "[css]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.tabSize": 2
+  },
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.tabSize": 2
+  },
+  "[vue]": {
+    "editor.defaultFormatter": "octref.vetur"
+  },
+  "javascript.updateImportsOnFileMove.enabled": "never",
+  "[markdown]": {
+    "files.trimTrailingWhitespace": false
+  },
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "python.analysis.extraPaths": [
+    "${workspaceFolder}"
+  ],
+  // "C_Cpp.intelliSenseEngine": "Tag Parser",
+}

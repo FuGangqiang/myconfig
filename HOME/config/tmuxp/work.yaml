@@ -1,0 +1,123 @@
+session_name: Work
+windows:
+- window_name: Machiner
+  layout: main-horizontal
+  shell_command_before:
+    - cd ~/Work/machiner
+  panes:
+    - bundle exec rails server -e development -b 0.0.0.0
+    - pwd
+    - pwd
+- window_name: MachinerDB
+  layout: main-horizontal
+  shell_command_before:
+    - cd ~/Work/Database
+  panes:
+    - psql -d machiner_development
+    - cd ~/Work/machiner
+    - pwd
+- window_name: MachinerVue
+  layout: main-horizontal
+  shell_command_before:
+    - cd ~/Work/machiner-vue
+  panes:
+    - yarn serve
+    - pwd
+    - pwd
+- window_name: MachinerMp
+  layout: main-horizontal
+  shell_command_before:
+    - cd ~/Work/machiner-mp
+  panes:
+    - pwd
+    - pwd
+    - pwd
+- window_name: Splitter
+  layout: main-horizontal
+  shell_command_before:
+    - cd ~/Work/splitter
+  panes:
+    - ./splitter -pgxpool
+    - pwd
+    - pwd
+- window_name: SplitterDB
+  layout: main-horizontal
+  shell_command_before:
+    - cd ~/Work/Database
+  panes:
+    - psql -d splitter
+    - cd ~/Work/splitter
+    - pwd
+- window_name: SplitterVue
+  layout: main-horizontal
+  shell_command_before:
+    - cd ~/Work/splitter-vue
+  panes:
+    - yarn dev
+    - pwd
+    - pwd
+- window_name: Reward
+  layout: main-horizontal
+  shell_command_before:
+    - cd ~/Work/rewards
+  panes:
+    - ./rewards
+    - pwd
+    - pwd
+- window_name: RewardDB
+  layout: main-horizontal
+  shell_command_before:
+    - cd ~/Work/Database
+  panes:
+    - psql -d rewards
+    - cd ~/Work/rewards
+    - pwd
+- window_name: RewardVue
+  layout: main-horizontal
+  shell_command_before:
+    - cd ~/Work/rewards-vue
+  panes:
+    - yarn serve
+    - pwd
+    - pwd
+- window_name: OrganizerBackend
+  layout: main-horizontal
+  shell_command_before:
+    - cd ~/Work/organizer/Backend
+    - export $(xargs < .flaskenv)
+  panes:
+    - flask run
+    - pwd
+    - pwd
+- window_name: OrganizerDB
+  layout: main-horizontal
+  shell_command_before:
+    - cd ~/Work/organizer
+  panes:
+    - psql -d organizer_development
+    - pwd
+    - pwd
+- window_name: OrganizerFrontend
+  layout: main-horizontal
+  shell_command_before:
+    - cd ~/Work/organizer/Frontend
+  panes:
+    - npm run serve
+    - pwd
+    - pwd
+- window_name: MachinerWorker
+  layout: main-horizontal
+  shell_command_before:
+    - cd ~/Work/machiner
+  panes:
+    - bundle exec sidekiq
+    - pwd
+    - pwd
+- window_name: Website
+  layout: main-horizontal
+  shell_command_before:
+    - cd ~/Work/zimatech.com.hk
+  panes:
+    - bundle exec middleman serve --bind-address=0.0.0.0
+    - pwd
+    - pwd

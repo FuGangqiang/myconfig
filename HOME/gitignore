@@ -1,0 +1,56 @@
+*~
+
+# tags
+GPATH
+GRTAGS
+GTAGS
+
+# c
+*.so
+
+# python
+.venv/
+__pycache__/
+*.py[cod]
+*.egg-info/
+build/
+dist/
+sdist/
+.python-version
+Pipfile
+Pipfile.lock
+.flaskenv
+
+# ide
+.idea/
+.project
+.projectile
+.static
+target
+.cproject
+.settings/
+.cache/
+
+# db
+*.sqlite
+*.sqlite3
+
+.svn
+*.log
+*.pid
+*.http
+
+.tern-port
+obj/
+bin/
+
+.vscode/
+.vagrant/
+
+.ruby-version
+vendor/ruby
+.prettierrc.yaml
+package-lock.json
+tab.yml
+
+*.doc

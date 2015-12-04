@@ -1,0 +1,28 @@
+{
+	"Main": {
+		"prefix": "Main",
+		"body": [
+			"public static void Main(string[] args)",
+			"{",
+			"\t$0",
+			"}"
+		]
+	},
+	"ExampleFile": {
+		"prefix": "ExampleFile",
+		"body": [
+			"using System;",
+			"",
+			"namespace Example",
+			"{",
+			"\tclass Program",
+			"\t{",
+			"\t\tstatic void Main(string[] args)",
+			"\t\t{",
+			"\t\t\t${0:Console.WriteLine(\"Hello World!\");}",
+			"\t\t}",
+			"\t}",
+			"}"
+		]
+	}
+}

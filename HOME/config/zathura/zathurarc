@@ -1,0 +1,19 @@
+set pages-per-row 1
+
+map = zoom in
+map - zoom out
+
+set zoom-step 5
+set window-title-basename true
+set inputbar-bg "#FF4000"
+set statusbar-bg "#688A08"
+set default-bg "#c4daca"
+
+set recolor true
+set recolor-darkcolor "#1f1f1f"
+set recolor-lightcolor "#c4daca"
+
+map [normal] F toggle_fullscreen
+map [fullscreen] F toggle_fullscreen
+map [normal] R rotate rotate-ccw
+map [fullscreen] R rotate rotate-ccw

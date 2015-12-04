@@ -1,0 +1,33 @@
+[alias]
+	co = checkout
+	br = branch
+	st = status -s
+	ci = commit
+	cp = cherry-pick
+	mg = merge
+	rb = rebase
+	di = diff
+	sm = submodule
+	lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --
+[core]
+	editor = vim
+	excludesfile = ~/.gitignore
+	quotepath = false
+	commitGraph = true
+[push]
+	default = upstream
+[color]
+	status = auto
+	branch = auto
+[user]
+	name = FuGangqiang
+	email = fu_gangqiang@qq.com
+[fetch]
+	prune = true
+[merge]
+	tool = code
+[gc]
+	writeCommitGraph = true
+[pull]
+	rebase = true
+	ff = only

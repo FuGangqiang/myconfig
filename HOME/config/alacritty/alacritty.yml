@@ -1,0 +1,13 @@
+font:
+  size: 11.0
+
+colors:
+  primary:
+    background: '0x010101'
+    foreground: '0x73d216'
+
+selection:
+  save_to_clipboard: true
+
+cursor:
+  style: Block

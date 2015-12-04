@@ -1,0 +1,8 @@
+[Unit]
+Description=PowerOff system
+
+[Service]
+ExecStart=systemctl poweroff
+
+[Install]
+WantedBy=default.target

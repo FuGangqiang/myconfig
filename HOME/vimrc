@@ -1,0 +1,66 @@
+set encoding=utf-8
+set autochdir
+set showmode
+syntax on
+
+set number
+set relativenumber
+set cursorline
+set showmatch
+set hlsearch
+set incsearch
+set ignorecase
+set smartcase
+set noerrorbells
+" set visualbell
+
+" set textwidth=80
+set wrap
+set linebreak
+set wrapmargin=2
+set scrolloff=4
+" set sidescrolloff=15
+set listchars=tab:»■,trail:■
+set list
+
+set expandtab
+set autoindent
+set tabstop=4
+set shiftwidth=4
+set softtabstop=4
+
+set laststatus=2
+set statusline=%F%m%r%h%w\ [POS=%l,%v][%p%%]\ %{strftime(\"%Y-%m-%d\ %H:%M\")}
+
+set autoread
+set history=1000
+" set nobackup
+" set noswapfile
+" set undofile
+" silent !mkdir -p ~/.config/nvim/tmp/backup
+" silent !mkdir -p ~/.config/nvim/tmp/undo
+" silent !mkdir -p ~/.config/nvim/tmp/sessions
+" set backupdir=~/.config/nvim/tmp/backup,.
+" set directory=~/.config/nvim/tmp/backup,.
+" set undodir=~/.config/nvim/tmp/undo,.
+
+set wildmenu
+set wildmode=longest:list,full
+
+cnoremap <C-A> <Home>
+cnoremap <C-F> <Right>
+cnoremap <C-B> <Left>
+cnoremap <A-b> <S-Left>
+cnoremap <A-f> <S-Right>
+
+" fcitx 中文输入法自动切换
+let g:input_toggle = 1
+function! Fcitx2en()
+    let s:input_status = system("fcitx-remote")
+    if s:input_status == 2
+        let g:input_toggle = 1
+        let l:a = system("fcitx-remote -c")
+    endif
+endfunction
+set ttimeoutlen=150
+autocmd InsertLeave * call Fcitx2en()

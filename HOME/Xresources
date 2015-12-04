@@ -1,0 +1,85 @@
+Xft.dpi : 96
+Xft.antialias: True
+Xft.hinting: True
+Xft.hintstyle: hintsmedium
+
+!BLK Cursor
+#define _color0        #353535
+#define _color8        #666666
+!RED Tag
+#define _color1        #e50063
+#define _color9        #ff4697
+!GRN SpecialKey
+#define _color2        #00ff00
+#define _color10       #bfea30
+!YEL Keyword
+#define _color3        #ffec6e
+#define _color11       #fcf09f
+!BLU Number
+#define _color4        #0000ff
+#define _color12       #66d9ef
+!MAG Precondit
+#define _color5        #ff00ff
+#define _color13       #da4eda
+!CYN Float
+#define _color6        #a7a15e
+#define _color14       #f0e68c
+!WHT Search
+#define _color7        #bbbbbb
+#define _color15       #eeeeee
+!FMT Include, StatusLine, ErrorMsg
+#define _colorBD       #ffec6e
+#define _colorUL       #f16000
+#define _colorIT       #ff00ff
+!TXT Normal, Normal, Cursor
+#define _foreground    #00ff00
+#define _background    #111111
+#define _cursorColor   #daa520
+
+URxvt.preeditType: Root
+URxvt.depth: 32
+URxvt.font: xft:DejaVu Sans Mono:size=10
+URxvt.cursorBlink: True
+URxvt.pointerBlank: True
+URxvt.externalBorder: False
+URxvt.multichar_encoding: utf-8
+URxvt.imLocale: zh_CN.UTF-8
+URxvt.inputMethod: fctix
+URxvt.scrollBar: False
+URxvt.scrollTtyKeypress: True
+URxvt.mouseWheelScrollPage: True
+URxvt.saveLines: 100000
+URxvt.borderLess: False
+
+URxvt.perl-ext-common: default,matcher,tabbed
+URxvt.url-launcher: /usr/bin/google-chrome-stable
+URxvt.matcher.button: 1
+URxvt.keysym.C-Delete: perl:matcher:last
+URxvt.keysym.M-Delete: perl:matcher:list
+URxvt.tabbed.tabbar-fg: 2
+URxvt.tabbed.tabbar-bg: 0
+URxvt.tabbed.tab-fg: 3
+URxvt.tabbed.tab-bg: 0
+
+URxvt.color0      : _color0
+URxvt.color1      : _color1
+URxvt.color2      : _color2
+URxvt.color3      : _color3
+URxvt.color4      : _color5
+URxvt.color5      : _color5
+URxvt.color6      : _color6
+URxvt.color7      : _color7
+URxvt.color8      : _color8
+URxvt.color9      : _color9
+URxvt.color10     : _color10
+URxvt.color11     : _color11
+URxvt.color12     : _color13
+URxvt.color13     : _color13
+URxvt.color14     : _color14
+URxvt.color15     : _color15
+URxvt.colorBD     : _colorBD
+URxvt.colorIT     : _colorIT
+URxvt.colorUL     : _colorUL
+URxvt.foreground  : _foreground
+URxvt.background  : _background
+URxvt.cursorColor : _cursorColor

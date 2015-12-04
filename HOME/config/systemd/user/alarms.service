@@ -1,0 +1,8 @@
+[Unit]
+Description=Alarms
+
+[Service]
+ExecStart=%h/.local/bin/alarms.py
+
+[Install]
+WantedBy=default.target
